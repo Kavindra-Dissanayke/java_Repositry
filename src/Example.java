@@ -11,6 +11,6 @@ public class Example {
        System.out.print("enter the first num2 : ");
        int num2=input.nextInt();
        int tot=num1+num2;
-       System.out.println(tot);
+       System.out.println(" Total"+num1+"+"+num2+"+"+tot);
     }
 }
