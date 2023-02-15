@@ -206,7 +206,7 @@ class Example{
 }
 
 */
-import java.util.*;
+/*import java.util.*;
 class Example{
     public static int sumOfDigits(int num){
         int sum=0;
@@ -224,4 +224,26 @@ class Example{
         sum=sumOfDigits(num);
         System.out.println("Sum of digits for "+num+" : "+sum);
     }
+}*/
+/*
+import java.util.*;
+class Example{
+    public static int reverse(int num){
+        int reverse=0;
+        while(num!=0){
+            reverse*=10;
+            reverse+=num%10;
+            num/=10;
+        }
+        return reverse;
+
+    }
+    public static void main(String args[]){
+        Scanner input=new Scanner(System.in);
+        System.out.print("Input an integer : ");
+        int num=input.nextInt();
+        System.out.println("Reverse number of "+num+" : "+reverse(num));
+    }
 }
+*/
+
