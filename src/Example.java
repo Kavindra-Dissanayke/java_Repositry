@@ -246,4 +246,35 @@ class Example{
     }
 }
 */
+/*import java.util.*;
+class Example{
+    public static void main(String args[]){
+        Random random=new Random();
+        for(int i=0; i<10; i++){
+            int rand=random.nextInt();
+            System.out.println("Absolute value of "+rand+" : "+abs(rand));
+        }
+    }
+    public  static int abs(int rand){
+        if (rand<0){
+            rand=-rand;
+        }return rand;
+    }
+
+}*/
+import java.util.*;
+class Example{
+    public static void main(String args[]){
+        Random random=new Random();
+        for(int i=0; i<10; i++){
+            int rand=random.nextInt();
+            System.out.println("Absolute value of "+rand+" : "+abs(rand));
+        }
+    }
+    public  static int abs(int rand){
+        rand=rand<0?-rand:rand;
+        return rand;
+    }
+
+}
 
