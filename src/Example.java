@@ -8,6 +8,7 @@ class Example{
     public static void main(String args[]){
         myMethod(111);
         myMethod(1.5);
+        System.out.println();
     }
 }
 
