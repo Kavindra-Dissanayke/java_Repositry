@@ -1,12 +1,21 @@
+import java.util.*;
 class Example{
-    public static void myMethod(int i, double d){
-        System.out.println("myMethod(int,double)");
-    }
-    public static void myMethod(double d, int i){
-        System.out.println("myMethod(double,int)");
-    }
     public static void main(String args[]){
-        myMethod(111,1.5);
-        myMethod(1.5,111);
+        for(int i=0; i<1000; i++){
+            if(isPalindrome(i)){
+                System.out.println(i);
+            }
+        }
+    }
+    public static boolean isPalindrome(int num){
+        int temp=num;
+        int rev=0;
+        while (num>0){
+            rev=rev*10;
+            rev=num%10+rev;
+            num=num/10;
+        }
+   return temp==rev?true:false;
+
     }
 }
